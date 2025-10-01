@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ------------------------
+# Data management
+# ------------------------
+
+# Ignore all raw data
+data/raw/*
+
+# Ignore large intermediate files
+*.parquet
+*.h5
+*.pkl
+*.zip
+*.tar
+*.gz
+
+# Allow small processed datasets (for reproducibility)
+!data/processed/*.csv
